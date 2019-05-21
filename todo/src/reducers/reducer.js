@@ -1,4 +1,4 @@
-
+import { AddTodo } from "../actions/AddTodo";
 
 const initialState = {
     title: "TodoList",
@@ -18,7 +18,7 @@ const initialState = {
 
     function reducer(state = initialState, action) {
         switch (action.type) {
-          case New_Todo:
+          case AddTodo:
             return {
               ...state,
               todos: state.todos.concat({
@@ -26,4 +26,6 @@ const initialState = {
                 text: action.payload,
                 completed: false
               })
-            };
+            }}};
+
+            export default reducer;
