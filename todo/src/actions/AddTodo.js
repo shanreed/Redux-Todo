@@ -1,10 +1,13 @@
 export const AddTodo = "AddTodo";
 
-
+//actions creator
 export const addNewTodo = todo => {
-    // acttion
+    // actions
     return {
       type: AddTodo,
       payload: todo
     };
   };
+
+
+
